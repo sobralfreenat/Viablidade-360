@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,12 +8,21 @@
   <title>Imagem e Círculos Rotativos</title>
   <style>
     .container {
+      display: flex;
+    }
+
+    .image-container {
       position: relative;
-      width: 600px; /* Container maior */
-      height: 600px; /* Container maior */
+      width: 2300px;
+      height: 600px;
       border: 1px solid transparent;
       overflow: hidden;
     }
+
+    .controls-container {
+      margin-left: 20px;
+    }
+
     .image {
       width: 100%;
       height: 100%;
@@ -25,65 +36,167 @@
       border-radius: 50%;
       position: absolute;
       cursor: pointer;
-      left: 10px; /* Ajuste para o canto esquerdo */
-      top: 10px; /* Ajuste para o canto superior */
     }
     .verde { background-color: green; }
     .azul { background-color: blue; }
     .amarelo { background-color: yellow; }
     .vermelho { background-color: red; }
 
-    .controls {
-      margin-top: 10px;
+    .button {
+      display: inline-block;
+      width: 200px;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #1b0bff;
+      color: white;
+      border: 1px solid black;
+      border-radius: 0px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    /* Estilos para os botões Salvar e Carregar */
+    #salvarEstado,
+    #carregarEstado {
+      background-color: #1b0bff;
+      border-color: black;
+      margin-right: 10px;
+    }
+
+    #carregarEstado {
+      background-color: #c22fc7;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img class="image" src="https://d1yei2z3i6k35z.cloudfront.net/6682800/65d82286182f9_viabilidde360source.png" alt="Imagem" style="width: 100%; height: auto;"> <!-- Ajuste de tamanho da imagem -->
-    <div class="circle verde"></div>
-    <div class="circle azul" style="top: 40px;"></div>
-    <div class="circle amarelo" style="top: 70px;"></div>
-    <div class="circle vermelho" style="top: 100px;"></div>
-  </div>
+    <div class="image-container">
+      <img class="image" src="https://d1yei2z3i6k35z.cloudfront.net/6682800/65d82286182f9_viabilidde360source.png" alt="Imagem">
+      <div class="circle verde"></div>
+      <div class="circle azul" style="top: 40px;"></div>
+      <div class="circle amarelo" style="top: 70px;"></div>
+      <div class="circle vermelho" style="top: 100px;"></div>
+    </div>
 
-  <div class="controls">
-    <label for="rotationInput">Ângulo de Rotação:</label>
-    <input type="number" min="-360" max="360" step="1" value="0" id="rotationInput">
-    <input type="range" min="-360" max="360" value="0" id="rotationRange">
-  </div>
-  
-  <div class="controls">
-    <label for="sizeRange">Tamanho dos Círculos:</label>
-    <input type="range" min="10" max="50" value="20" id="sizeRange">
-  </div>
+    <div class="controls-container"><br><br><br><br><br><br><br><br><br>
+      <label for="rotationInput">Ângulo de Rotação:</label>
+      <input type="number" min="-360" max="360" step="1" value="0" id="rotationInput">
+      <input type="range" min="-360" max="360" value="0" id="rotationRange">
+<br>
 
-  <div class="controls">
-    <label for="fileInput">Escolher Arquivo:</label>
-    <input type="file" id="fileInput">
-  </div>
-
-  <button id="showHidden">Mostrar Ocultos</button>
+    
+      <label for="sizeRange">Tamanho dos Círculos:</label>
+      <input type="range" min="10" max="50" value="20" id="sizeRange">
+<br>
+	  <button id="showHidden">Mostrar Ocultos</button>
   <button id="resetHidden">Reiniciar Ocultos</button>
+	<br><br>
+    
+      <label for="fileInput">Escolher Arquivo:</label>
+      <input type="file" id="fileInput">
+
+    </div>
+  </div>
+
+ <div class="button-container">
+    <button class="button" id="salvarEstado">Salvar Estado</button>
+    <input type="file" id="fileInput" style="display: none;">
+    <button class="button" id="carregarEstado">Carregar Estado</button>
+  </div>
 
   <script>
     const container = document.querySelector('.container');
+    const imageContainer = document.querySelector('.image-container');
     const rotationInput = document.getElementById('rotationInput');
     const rotationRange = document.getElementById('rotationRange');
     const sizeRange = document.getElementById('sizeRange');
     const fileInput = document.getElementById('fileInput');
+    const salvarEstadoButton = document.getElementById('salvarEstado');
+    const carregarEstadoButton = document.getElementById('carregarEstado');
     const showHiddenButton = document.getElementById('showHidden');
     const resetHiddenButton = document.getElementById('resetHidden');
 
     const colors = ['verde', 'azul', 'amarelo', 'vermelho'];
     let colorIndex = 0;
 
-    // Mostrar círculos ocultos ao clicar no botão
-    showHiddenButton.addEventListener('click', () => {
-      createHiddenCircles(4); // Criar um novo conjunto de círculos ocultos
+// Event listener para alterar a imagem
+fileInput.addEventListener('change', (event) => {
+  const file = event.target.files[0];
+  const reader = new FileReader();
+  reader.onload = function(event) {
+    const image = imageContainer.querySelector('.image');
+    image.src = event.target.result;
+  };
+  reader.readAsDataURL(file);
+});
+
+
+    // Função para salvar o estado atual dos círculos
+salvarEstadoButton.addEventListener('click', () => {
+  const circles = document.querySelectorAll('.circle');
+  const circlesData = [];
+  circles.forEach(circle => {
+    const circleData = {
+      color: circle.classList[1], // Obtém a classe de cor do círculo
+      top: circle.style.top, // Obtém a posição superior do círculo
+      left: circle.style.left // Obtém a posição esquerda do círculo
+    };
+    circlesData.push(circleData);
+  });
+
+  // Solicitar nome do arquivo
+  const fileName = prompt("Por favor, insira o nome do arquivo:");
+  if (fileName) {
+    const estadoJSON = JSON.stringify(circlesData);
+    const blob = new Blob([estadoJSON], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${fileName}.json`;
+    link.click();
+  } else {
+    alert("Nome do arquivo inválido. Por favor, insira um nome válido.");
+  }
+});
+
+
+    // Função para carregar o estado salvo dos círculos
+    carregarEstadoButton.addEventListener('click', () => {
+      fileInput.click();
     });
 
-    // Reiniciar círculos ocultos ao clicar no botão
+    fileInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const estadoJSON = event.target.result;
+        const circlesData = JSON.parse(estadoJSON);
+        circlesData.forEach(circleData => {
+          const newCircle = document.createElement('div');
+          newCircle.className = `circle ${circleData.color}`;
+          newCircle.style.top = circleData.top;
+          newCircle.style.left = circleData.left;
+          imageContainer.appendChild(newCircle);
+          makeDraggable(newCircle);
+        });
+      };
+      reader.readAsText(file);
+    });
+
+    // Função para mostrar círculos ocultos
+    showHiddenButton.addEventListener('click', () => {
+      createHiddenCircles(4);
+    });
+
+    // Função para reiniciar círculos ocultos
     resetHiddenButton.addEventListener('click', () => {
       resetHiddenCircles();
     });
@@ -94,9 +207,9 @@
         const newCircle = document.createElement('div');
         newCircle.className = `circle ${colors[colorIndex]} hidden`;
         newCircle.style.top = `${10 + i * 30}px`;
-        container.appendChild(newCircle);
+        imageContainer.appendChild(newCircle);
         colorIndex = (colorIndex + 1) % colors.length;
-        makeDraggable(newCircle); // Adiciona a lógica de arrastar ao novo círculo oculto
+        makeDraggable(newCircle);
       }
     }
 
@@ -126,8 +239,8 @@
         // Função para mover o círculo durante o arrasto
         function moveCircle(event) {
           event.preventDefault();
-          const x = event.clientX - offsetX - container.getBoundingClientRect().left;
-          const y = event.clientY - offsetY - container.getBoundingClientRect().top;
+          const x = event.clientX - offsetX - imageContainer.getBoundingClientRect().left;
+          const y = event.clientY - offsetY - imageContainer.getBoundingClientRect().top;
           circle.style.left = `${x}px`;
           circle.style.top = `${y}px`;
         }
@@ -146,7 +259,7 @@
         document.addEventListener('keydown', function(e) {
           if (e.ctrlKey) {
             const clone = circle.cloneNode(true); // Clonar o círculo selecionado
-            container.appendChild(clone); // Adicionar o clone ao container
+            imageContainer.appendChild(clone); // Adicionar o clone ao container
             makeDraggable(clone); // Tornar o clone arrastável
           }
         });
@@ -163,36 +276,25 @@
     // Event listener para alterar a rotação usando o input number
     rotationInput.addEventListener('input', () => {
       const rotationValue = rotationInput.value;
-      container.style.transform = `rotate(${rotationValue}deg)`;
+      imageContainer.style.transform = `rotate(${rotationValue}deg)`;
       rotationRange.value = rotationValue;
     });
 
     // Event listener para alterar a rotação usando o input range
     rotationRange.addEventListener('input', () => {
       const rotationValue = rotationRange.value;
-      container.style.transform = `rotate(${rotationValue}deg)`;
+      imageContainer.style.transform = `rotate(${rotationValue}deg)`;
       rotationInput.value = rotationValue;
     });
 
     // Event listener para alterar o tamanho dos círculos
     sizeRange.addEventListener('input', () => {
       const newSize = sizeRange.value + 'px';
-      const circles = container.querySelectorAll('.circle:not(.hidden)');
+      const circles = imageContainer.querySelectorAll('.circle:not(.hidden)');
       circles.forEach(circle => {
         circle.style.width = newSize;
         circle.style.height = newSize;
       });
-    });
-
-    // Event listener para alterar a imagem
-    fileInput.addEventListener('change', (event) => {
-      const file = event.target.files[0];
-      const reader = new FileReader();
-      reader.onload = function(event) {
-        const image = container.querySelector('.image');
-        image.src = event.target.result;
-      };
-      reader.readAsDataURL(file);
     });
 
     // Chamada inicial para criar os círculos ocultos
