@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 524.75 506.2">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-1, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-size: 8.58px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: ArialMT, Arial;
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-7 {
+        stroke-width: 2px;
+      }
+
+      .cls-7, .cls-8, .cls-9, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7, .cls-8, .cls-10 {
+        stroke: #231f20;
+      }
+
+      .cls-7, .cls-9 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #a0c9d7;
+      }
+
+      .cls-4, .cls-5 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-8, .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        stroke: #fff;
+        stroke-width: 5.05px;
+      }
+
+      .cls-3 {
+        font-size: 6.87px;
+      }
+
+      .cls-5 {
+        fill: #f19852;
+      }
+
+      .cls-10 {
+        stroke-width: .9px;
+      }
+    </style>
+  </defs>
+  <g class="cls-6">
+    <g id="Círculo">
+      <path class="cls-5" d="M363.33,425.28c91.04-54.62,120.57-172.71,65.95-263.75-54.62-91.04-172.71-120.57-263.75-65.95"/>
+      <path class="cls-4" d="M165.53,95.58c-91.04,54.62-120.57,172.71-65.95,263.75,54.62,91.04,172.71,120.57,263.75,65.95"/>
+    </g>
+    <g id="Traço_branco" data-name="Traço branco">
+      <line class="cls-9" x1="264.43" y1="260.43" x2="364.46" y2="432.01"/>
+    </g>
+    <g id="traço">
+      <line class="cls-7" x1="264.57" y1="260.49" x2="264.57" y2="66.73"/>
+      <line class="cls-7" x1="264.57" y1="260.49" x2="123.31" y2="393.12"/>
+      <line class="cls-7" x1="264.57" y1="260.49" x2="86.89" y2="183.2"/>
+      <line class="cls-7" x1="264.57" y1="260.49" x2="133.27" y2="118"/>
+      <line class="cls-7" x1="264.57" y1="260.49" x2="70.81" y2="261.67"/>
+      <line class="cls-7" x1="264.18" y1="260.49" x2="83.97" y2="331.69"/>
+      <line class="cls-7" x1="264.57" y1="260.49" x2="179.93" y2="434.78"/>
+      <line class="cls-7" x1="264.43" y1="260.43" x2="256.12" y2="456.89"/>
+      <line class="cls-7" x1="264.17" y1="260.49" x2="433.11" y2="354.45"/>
+      <line class="cls-7" x1="264.57" y1="260.49" x2="428.34" y2="156.72"/>
+    </g>
+    <g id="centro">
+      <circle class="cls-1" cx="264.57" cy="260.49" r="21.3"/>
+    </g>
+    <g id="bolinhas_brancas" data-name="bolinhas brancas">
+      <circle class="cls-8" cx="264.57" cy="234.27" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="215.29" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="196.31" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="177.33" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="158.35" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="139.38" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="120.4" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="101.42" r="4.12"/>
+      <circle class="cls-8" cx="264.57" cy="82.44" r="4.12"/>
+      <circle class="cls-10" cx="264.57" cy="63.85" r="3.72"/>
+      <circle class="cls-8" cx="211.21" cy="310.59" r="4.12"/>
+      <circle class="cls-8" cx="181.12" cy="338.84" r="4.12"/>
+      <circle class="cls-8" cx="151.02" cy="367.1" r="4.12"/>
+      <circle class="cls-10" cx="121.22" cy="395.08" r="3.72"/>
+      <circle class="cls-8" cx="197.45" cy="231.29" r="4.12"/>
+      <circle class="cls-8" cx="159.6" cy="214.83" r="4.12"/>
+      <circle class="cls-8" cx="121.75" cy="198.36" r="4.12"/>
+      <circle class="cls-10" cx="84.26" cy="182.05" r="3.72"/>
+      <circle class="cls-8" cx="214.97" cy="206.67" r="4.12"/>
+      <circle class="cls-8" cx="193.99" cy="183.9" r="4.12"/>
+      <circle class="cls-8" cx="173.01" cy="161.13" r="4.12"/>
+      <circle class="cls-8" cx="152.03" cy="138.37" r="4.12"/>
+      <circle class="cls-10" cx="131.32" cy="115.89" r="3.72"/>
+      <circle class="cls-8" cx="191.38" cy="260.93" r="4.12"/>
+      <circle class="cls-8" cx="150.1" cy="261.18" r="4.12"/>
+      <circle class="cls-8" cx="108.82" cy="261.43" r="4.12"/>
+      <circle class="cls-10" cx="67.94" cy="261.68" r="3.72"/>
+      <circle class="cls-8" cx="196.11" cy="287.39" r="4.12"/>
+      <circle class="cls-8" cx="157.72" cy="302.55" r="4.12"/>
+      <circle class="cls-8" cx="119.32" cy="317.72" r="4.12"/>
+      <circle class="cls-10" cx="81.3" cy="332.75" r="3.72"/>
+      <circle class="cls-8" cx="234.36" cy="322.71" r="4.12"/>
+      <circle class="cls-8" cx="220.39" cy="351.46" r="4.12"/>
+      <circle class="cls-8" cx="206.43" cy="380.21" r="4.12"/>
+      <circle class="cls-8" cx="192.46" cy="408.97" r="4.12"/>
+      <circle class="cls-10" cx="178.67" cy="437.37" r="3.72"/>
+      <circle class="cls-8" cx="261.72" cy="324.55" r="4.12"/>
+      <circle class="cls-8" cx="259.85" cy="368.8" r="4.12"/>
+      <circle class="cls-8" cx="257.98" cy="413.04" r="4.12"/>
+      <circle class="cls-10" cx="256.12" cy="456.89" r="3.72"/>
+      <circle class="cls-8" cx="303.41" cy="282" r="4.12"/>
+      <circle class="cls-8" cx="329.92" cy="296.81" r="4.12"/>
+      <circle class="cls-8" cx="356.43" cy="311.62" r="4.12"/>
+      <circle class="cls-8" cx="409.45" cy="341.24" r="4.12"/>
+      <circle class="cls-8" cx="382.94" cy="326.43" r="4.12"/>
+      <circle class="cls-10" cx="435.62" cy="355.85" r="3.72"/>
+      <circle class="cls-8" cx="286.72" cy="246.24" r="4.12"/>
+      <circle class="cls-8" cx="302.76" cy="236.1" r="4.12"/>
+      <circle class="cls-8" cx="318.8" cy="225.96" r="4.12"/>
+      <circle class="cls-8" cx="334.85" cy="215.82" r="4.12"/>
+      <circle class="cls-8" cx="350.89" cy="205.67" r="4.12"/>
+      <circle class="cls-8" cx="366.93" cy="195.53" r="4.12"/>
+      <circle class="cls-8" cx="382.98" cy="185.39" r="4.12"/>
+      <circle class="cls-8" cx="399.02" cy="175.25" r="4.12"/>
+      <circle class="cls-8" cx="415.06" cy="165.11" r="4.12"/>
+      <circle class="cls-10" cx="430.77" cy="155.18" r="3.72"/>
+    </g>
+    <g id="texto">
+      <text class="cls-3" transform="translate(272 65.36)"><tspan x="0" y="0">tenho certeza que sim!</tspan></text>
+      <text class="cls-2" transform="translate(220.48 34.88)"><tspan x="0" y="0">O problema representa</tspan><tspan x="3.57" y="8.58">uma de suas paixões</tspan><tspan x="24.79" y="17.15">pessoais?</tspan></text>
+      <text class="cls-3" transform="translate(272 83.89)"><tspan x="0" y="0">gosto de problema</tspan></text>
+      <text class="cls-3" transform="translate(272 99.29)"><tspan x="0" y="0">gosto do produto e</tspan><tspan x="0" y="6.87">gosto do problema</tspan></text>
+      <text class="cls-3" transform="translate(272 120.03)"><tspan x="0" y="0">gosto do produto e acho</tspan><tspan x="0" y="6.87">que gosto do problema</tspan></text>
+      <text class="cls-3" transform="translate(272 140.77)"><tspan x="0" y="0">gosto do produto, mas</tspan><tspan x="0" y="6.87">não do problema</tspan></text>
+      <text class="cls-3" transform="translate(272 161.06)"><tspan x="0" y="0">talvez sim...</tspan></text>
+      <text class="cls-3" transform="translate(272 198.51)"><tspan x="0" y="0">talvez não...</tspan></text>
+      <text class="cls-3" transform="translate(272 217.24)"><tspan x="0" y="0">acho que não!</tspan></text>
+      <text class="cls-3" transform="translate(272 235.96)"><tspan x="0" y="0">não!</tspan></text>
+      <text class="cls-3" transform="translate(272 179.78)"><tspan x="0" y="0">não sei...</tspan></text>
+      <text class="cls-3" transform="translate(117.23 388.57) rotate(-133.2)"><tspan x="0" y="0">global</tspan></text>
+      <text class="cls-2" transform="translate(126.41 430.36) rotate(-133.2)"><tspan x="0" y="0">Alcance da sua</tspan><tspan x="4.53" y="8.58">ideia “atual”?</tspan></text>
+      <text class="cls-3" transform="translate(147.23 360.41) rotate(-133.2)"><tspan x="0" y="0">nacional</tspan></text>
+      <text class="cls-3" transform="translate(177.22 332.25) rotate(-133.2)"><tspan x="0" y="0">regional</tspan></text>
+      <text class="cls-3" transform="translate(200.35 310.53) rotate(-133.2)"><tspan x="0" y="0">cidade/</tspan><tspan x="0" y="6.87">bairro</tspan></text>
+      <text class="cls-3" transform="translate(88.66 175.83) rotate(-66.49)"><tspan x="0" y="0">altíssima</tspan></text>
+      <text class="cls-2" transform="translate(64.54 197.87) rotate(-66.49)"><tspan x="0" y="0">É lucrativa?</tspan></text>
+      <text class="cls-3" transform="translate(126.61 192.34) rotate(-66.49)"><tspan x="0" y="0">alta</tspan></text>
+      <text class="cls-3" transform="translate(164.56 208.85) rotate(-66.49)"><tspan x="0" y="0">média</tspan></text>
+      <text class="cls-3" transform="translate(202.51 225.35) rotate(-66.49)"><tspan x="0" y="0">baixa</tspan></text>
+      <text class="cls-3" transform="translate(137.84 111.99) rotate(-42.66)"><tspan x="0" y="0">no mundo</tspan></text>
+      <text class="cls-2" transform="translate(104.76 124.34) rotate(-42.66)"><tspan x="0" y="0">É inovadora?</tspan></text>
+      <text class="cls-3" transform="translate(158.88 134.81) rotate(-42.66)"><tspan x="0" y="0">no Brasil</tspan></text>
+      <text class="cls-3" transform="translate(179.91 157.64) rotate(-42.66)"><tspan x="0" y="0">no segmento</tspan><tspan x="0" y="6.87">em que atuo</tspan></text>
+      <text class="cls-3" transform="translate(221.97 203.28) rotate(-42.66)"><tspan x="0" y="0">não é</tspan></text>
+      <text class="cls-3" transform="translate(200.94 180.46) rotate(-42.66)"><tspan x="0" y="0">na região</tspan></text>
+      <text class="cls-3" transform="translate(69.4 254.26) rotate(-90.35)"><tspan x="0" y="0">R$ bilhões</tspan></text>
+      <text class="cls-2" transform="translate(47.68 285.9) rotate(-90.35)"><tspan x="0" y="0">Tamanho do</tspan><tspan x="-5.95" y="8.58">“seu” mercado?</tspan></text>
+      <text class="cls-3" transform="translate(108.11 254.03) rotate(-90.35)"><tspan x="0" y="0">R$ centenas</tspan><tspan x="0" y="6.87">de milhões</tspan></text>
+      <text class="cls-3" transform="translate(153.69 253.75) rotate(-90.35)"><tspan x="0" y="0">R$ milhões</tspan></text>
+      <text class="cls-3" transform="translate(185.23 254.26) rotate(-90.35)"><tspan x="0" y="0">R$ mi-</tspan><tspan x="0" y="6.87">lhares</tspan></text>
+      <text class="cls-3" transform="translate(79.96 325.34) rotate(-111.56)"><tspan x="0" y="0">só de olhar</tspan></text>
+      <text class="cls-2" transform="translate(72.74 366.68) rotate(-111.56)"><tspan x="0" y="0">Benefício claro</tspan><tspan x="3.81" y="8.58">para cliente?</tspan></text>
+      <text class="cls-3" transform="translate(118.23 310.22) rotate(-111.56)"><tspan x="0" y="0">só de ler</tspan></text>
+      <text class="cls-3" transform="translate(147.22 299.95) rotate(-111.56)"><tspan x="0" y="0">requer</tspan><tspan x="0" y="6.87">explicação</tspan></text>
+      <text class="cls-3" transform="translate(178.62 290.31) rotate(-111.56)"><tspan x="0" y="0">requer</tspan><tspan x="0" y="6.87">demons-</tspan><tspan x="0" y="13.75">tração</tspan></text>
+      <text class="cls-3" transform="translate(178.67 426.45) rotate(-154.1)"><tspan x="0" y="0">auto-realização</tspan></text>
+      <text class="cls-2" transform="translate(201.7 471.18) rotate(-154.1)"><tspan x="0" y="0">Tipos de problema</tspan><tspan x="6.2" y="8.58">(necessidade)?</tspan></text>
+      <text class="cls-3" transform="translate(186.57 404.03) rotate(-154.1)"><tspan x="0" y="0">auto-estima</tspan></text>
+      <text class="cls-3" transform="translate(200.5 375.35) rotate(-154.1)"><tspan x="0" y="0">social</tspan></text>
+      <text class="cls-3" transform="translate(212.92 349.76) rotate(-154.1)"><tspan x="0" y="0">segu-</tspan><tspan x="0" y="6.87">rança</tspan></text>
+      <text class="cls-3" transform="translate(229.15 328.35) rotate(-154.1)"><tspan x="0" y="0">básica</tspan></text>
+      <text class="cls-3" transform="translate(248.73 455.07) rotate(-177.58)"><tspan x="0" y="0">bilhões</tspan></text>
+      <text class="cls-2" transform="translate(293.34 478.88) rotate(-177.58)"><tspan x="0" y="0">Resolve o problema</tspan><tspan x="0" y="8.58">de muitas pessoas?</tspan></text>
+      <text class="cls-3" transform="translate(250.61 410.72) rotate(-177.58)"><tspan x="0" y="0">milhões</tspan></text>
+      <text class="cls-3" transform="translate(252.48 366.38) rotate(-177.58)"><tspan x="0" y="0">milhares</tspan></text>
+      <text class="cls-3" transform="translate(259.82 334.35) rotate(-177.58)"><tspan x="0" y="0">dezenas</tspan></text>
+      <text class="cls-3" transform="translate(430.73 361.63) rotate(119.19)"><tspan x="0" y="0">sim! São contatos diretos!</tspan></text>
+      <text class="cls-2" transform="translate(481.03 316.51) rotate(119.19)"><tspan x="0" y="0">Conhece muitas pessoas que</tspan><tspan x="2.86" y="8.58">pagariam pela sua solução?</tspan></text>
+      <text class="cls-3" transform="translate(406.65 348.19) rotate(119.19)"><tspan x="0" y="0">sim! A maior parte</tspan><tspan x="0" y="6.87">são contatos diretos!</tspan></text>
+      <text class="cls-3" transform="translate(378.76 332.61) rotate(119.19)"><tspan x="0" y="0">sim! A maior parte</tspan><tspan x="0" y="6.87">são contatos indiretos!</tspan></text>
+      <text class="cls-3" transform="translate(350.87 317.03) rotate(119.19)"><tspan x="0" y="0">acho que sim...</tspan></text>
+      <text class="cls-3" transform="translate(324.61 302.36) rotate(119.19)"><tspan x="0" y="0">talvez não...</tspan></text>
+      <text class="cls-3" transform="translate(298.36 287.69) rotate(119.19)"><tspan x="0" y="0">não...</tspan></text>
+      <text class="cls-3" transform="translate(435.98 160.7) rotate(57.7)"><tspan x="0" y="0">sim, é agora e continuará</tspan><tspan x="0" y="6.87">sendo no médio/longo prazo!</tspan></text>
+      <text class="cls-2" transform="translate(424.44 107.04) rotate(57.7)"><tspan x="0" y="0">O problema representa</tspan><tspan x=".23" y="8.58">um desafio intelectual?</tspan></text>
+      <text class="cls-3" transform="translate(416.94 172.74) rotate(57.7)"><tspan x="0" y="0">sim, definitivamente!</tspan></text>
+      <text class="cls-3" transform="translate(400.98 182.83) rotate(57.7)"><tspan x="0" y="0">sim...</tspan></text>
+      <text class="cls-3" transform="translate(385.02 192.92) rotate(57.7)"><tspan x="0" y="0">entendo que sim...</tspan></text>
+      <text class="cls-3" transform="translate(369.05 203.01) rotate(57.7)"><tspan x="0" y="0">acho que sim...</tspan></text>
+      <text class="cls-3" transform="translate(353.09 213.1) rotate(57.7)"><tspan x="0" y="0">talvez sim...</tspan></text>
+      <text class="cls-3" transform="translate(321.17 233.28) rotate(57.7)"><tspan x="0" y="0">talvez não...</tspan></text>
+      <text class="cls-3" transform="translate(305.21 243.37) rotate(57.7)"><tspan x="0" y="0">acho que não!</tspan></text>
+      <text class="cls-3" transform="translate(289.25 253.46) rotate(57.7)"><tspan x="0" y="0">não!</tspan></text>
+      <text class="cls-3" transform="translate(337.13 223.19) rotate(57.7)"><tspan x="0" y="0">não sei...</tspan></text>
+    </g>
+  </g>
+</svg>
